@@ -56,8 +56,8 @@ This Azure workbook designed to showcase the Unused or Idle resources running on
 
 Dashboard view contains multiple tabs with relevant details
 
-![image](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/2e0269eef616c81f30c21985a14c3136d8c6889b/Azure-Unused-Resources/Docs/workbook-Overview.png)
-![image](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/eb98ef85dabf41dd70247c45e39253cd49bb2c31/Docs/AppGw-workbook.png)
+![image](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/ce8541b3cef3605511cf8cf6b2c79894c7611684/Docs/workbook-Overview.png)
+![image](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/ce8541b3cef3605511cf8cf6b2c79894c7611684/Docs/AppGw-workbook.png)
 
 
 All the information presented in this Workbook is based on Azure Resource Graph queries.
@@ -111,7 +111,7 @@ The Workbook is ready to use!
 Start using the Workbook and review your orphan resources.<br/>
 Filter by specific subscription is optional.
 
-![image](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/2e0269eef616c81f30c21985a14c3136d8c6889b/Azure-Unused-Resources/Docs/workbook-Overview.png)
+![image](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/ce8541b3cef3605511cf8cf6b2c79894c7611684/Docs/workbook-Overview.png)
 
 
 
