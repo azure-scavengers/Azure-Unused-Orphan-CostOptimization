@@ -50,7 +50,7 @@ AzureDiagnostics
 ```
 Output should not have any 2xx/3xx httpcodes logs reported as below image.
 
-![image](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/b7f220abc8bba624ea56e11ec3d156f5a4dec30b/Docs/AppGwStatus.png)
+![image](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/ce8541b3cef3605511cf8cf6b2c79894c7611684/Docs/AppGwStatus.png)
 
 #### Remediations:
 
