@@ -37,8 +37,9 @@ Type of resources covered in workbook:
 * Public IPs
   - PIP without any IPconfigured
 
-
 ## <a id="ConsultingRequest"></a> More Cost saving Resource Types
+
+Azure scavenger contains couple of powershell and KQL scripts to identify the anomolies and Utilization of azure resources which you have reader access into. Its automated to execute from an Azure functionapp with specific trigger frequency and the analysis outputs will be ingested to PowerBi/Airtable for dashboard visualization. This tool can be easily adopted in any azure environment with ADO pipeline and provide continuous montoring capabilities to your consumption.
 
 Mainly focussed on the costly resource types using KQL queries and PowerShell scripts for the Idle Utilization and misconfigurations. 
 *  PowerBI Embedded Capacity
