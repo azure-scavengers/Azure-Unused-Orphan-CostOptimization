@@ -56,7 +56,7 @@ On demand Cost optimizing automations using azure functions are available based 
 
 ## <a id="workbookview"></a> Additional Azure Workbook Offerings
 
-This Azure workbook designed to showcase the Unused or Idle resources running on your environment, also shows the provisioned SKU/Capacities and current state of the resources with the complete lists. You can download the inventory from this workbook and take necessary remediation accordingly. [Analysis Method and Remediation recommendations](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/3d5b34a428e8c6133a76f2594751ceb6d312a10b/Sample-KQLs/Idle-resources-SampleKQLs.md) 
+This Azure workbook designed to showcase the Unused or Idle resources running on your environment, also shows the provisioned SKU/Capacities and current state of the resources with the complete lists. You can download the inventory from this workbook and take necessary remediation accordingly. [Analysis Method and Remediation recommendations](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/485d23c956f28e0312f50cc61ce36b227b3f10d4/README.md) 
 
 Dashboard view contains multiple tabs with relevant details
 
@@ -89,7 +89,7 @@ Follow this steps to use the Workbook:
 <img src="https://user-images.githubusercontent.com/69309933/172807673-dfc63741-0c40-47c0-ab58-d39309b06e69.png" width="700"> 
 
 * Select the _'Gallery Template'_ (step 1)
-* Replace the JSON in the gallery template to the [Idle Resource template](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/main/Workbook/Workbook.json) (step 2)
+* Replace the JSON in the gallery template to the [Idle Resource template](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/485d23c956f28e0312f50cc61ce36b227b3f10d4/Workbook_Templates/Workbook.json) (step 2)
 * Click _'Apply'_ (step 3)
 
 <img src="https://user-images.githubusercontent.com/69309933/172807762-17aec6f9-4a81-4d5b-9017-673a0ab6b26e.png" width="700"> 
