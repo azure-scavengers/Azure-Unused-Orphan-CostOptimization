@@ -1,6 +1,6 @@
 # Azure Unused Resource Finder
 
-The Azure Unused Resource Finder shortly known as "Scavengers" is designed to help Azure cloud consumers to find the cost saving opportunities of their Infrastructure. It can perform assessment of multiple subscriptions at a time on different tenants of your Azure resources. It works based on Microsoft's cost optimization best practices defined in the Well-Architected and Cloud Adoption Framework.
+The Azure Unused Resource Finder shortly known as "Azure Scavengers" is designed to help Azure cloud consumers to find the cost saving opportunities of their Infrastructure. It can perform assessment of multiple subscriptions at a time on different tenants of your Azure resources. It works based on Microsoft's cost optimization best practices defined in the Well-Architected and Cloud Adoption Framework.
 
 Assess your Azure resource types for cost optimization scoped to subscriptions, management groups, or the entire tenant. Get an efficiency score for each subscription and can also provide total potential cost saving opportunity. Leverage cost data to understand optimization potential and can also provide different types of safe and secure remediation possibilities . Also it Incorporates the Azure Advisor recommendations.
 
@@ -39,19 +39,22 @@ Type of resources covered in workbook:
 
 ## <a id="ConsultingRequest"></a> More Cost saving Resource Types
 
-Azure scavenger contains couple of powershell and KQL scripts to identify the anomolies and Utilization of azure resources which you have reader access into. Its automated to execute from an Azure functionapp with specific trigger frequency and the analysis outputs will be ingested to PowerBi/Airtable for dashboard visualization. This tool can be easily adopted in any azure environment with ADO pipeline and provide continuous montoring capabilities to your consumption.
+Azure Scavengers is a tool contains the combination of powershell and KQL scripts to identify the anomolies and Idle Utilization of azure resources scoped to subscriptions/Management group which you have reader access into. Its automated to execute from an Azure functionapp with specific trigger frequency and the analysis outputs will be ingested to PowerBi/Airtable for dashboard visualization. This tool can be easily adopted in any azure environment with ADO pipeline and provide continuous monitoring capabilities to your resource Utilization.
 
 Mainly focussed on the costly resource types using KQL queries and PowerShell scripts for the Idle Utilization and misconfigurations. 
 *  PowerBI Embedded Capacity
 *  SQL DBs/Managed Instances (single)
 *  SQL DBs (ElasticPools)
 *  CosmosDB
+*  Application Gateways
+*  AppService Plan
+*  Storages
 
 On demand Cost optimizing automations using azure functions are available based on resource Utilization.
 
 <b>[Looking for a Demo? Connect Us!](https://airtable.com/appSMMDDdyPWKvAaC/shrrdqfA5X775v2gq)</b>
 
-## <a id="workbookview"></a> Azure Workbook Offerings
+## <a id="workbookview"></a> Additional Azure Workbook Offerings
 
 This Azure workbook designed to showcase the Unused or Idle resources running on your environment, also shows the provisioned SKU/Capacities and current state of the resources with the complete lists. You can download the inventory from this workbook and take necessary remediation accordingly. [Analysis Method and Remediation recommendations](https://github.com/azure-scavengers/Azure-Unused-Resources/blob/3d5b34a428e8c6133a76f2594751ceb6d312a10b/Sample-KQLs/Idle-resources-SampleKQLs.md) 
 
