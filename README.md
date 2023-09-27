@@ -52,8 +52,6 @@ Mainly focussed on the costly resource types using KQL queries and PowerShell sc
 
 On demand Cost optimizing automations using azure functions are available based on resource Utilization.
 
-<b>[Looking for a Demo? Connect Us!](https://airtable.com/appSMMDDdyPWKvAaC/shrrdqfA5X775v2gq)</b>
-
 ## <a id="workbookview"></a> Additional Azure Workbook Offerings
 
 This Azure workbook designed to showcase the Unused or Idle resources running on your environment, also shows the provisioned SKU/Capacities and current state of the resources with the complete lists. You can download the inventory from this workbook and take necessary remediation accordingly. [Analysis Method and Remediation recommendations](https://github.com/azure-scavengers/Azure-Unused-Orphan-CostOptimization/blob/485d23c956f28e0312f50cc61ce36b227b3f10d4/README.md) 
