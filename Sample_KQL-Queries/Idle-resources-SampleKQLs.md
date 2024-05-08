@@ -70,7 +70,8 @@ Criteria:
 
 *  ASP without any Application Hosted 
 *  ASP with application hosted but stopped in state (webApp/Api/Slots)
-*  Resource shouldnt be built recently 
+*  Resource shouldnt be built recently
+*  ASP with Only Functionapp having NO Function ExecutionCounts
 
 #### ASP - without Apps
 
@@ -114,7 +115,33 @@ AzureMetrics
 | where ResourceProvider =~"microsoft.web"
 | where TimeGenerated > ago(180d)
 ```
+####  ASP - with Only FunctionApps
+```
+resources
+| where type =~ "microsoft.web/serverfarms"
+| where tostring(sku.tier) <> "Dynamic" and tostring(sku.tier) <> "WorkflowStandard" and tostring(sku.tier) <> "ElasticPremium"
+| extend NoOfApps= properties.numberOfSites
+| where NoOfApps != 0
+| join kind=leftouter (
+    resources
+    | where type =~ "Microsoft.Web/sites"
+    | extend serverFarmId=split(properties.serverFarmId, '/')[-1]
+    | where kind contains "functionapp"
+    | summarize AppCount=count() by tostring(serverFarmId), Kind=kind, location) on location        
+| where name == serverFarmId
+| where NoOfApps == AppCount   
+| extend Details = pack_all()
+| project Resource=id, resourceGroup, location, subscriptionId, Kind, Sku=sku.name, Tier=sku.tier, NoOfApps, AppCount, tags, Details
+```
 
+#### Note
+If you have identified any FunctionApp ASPs without any functions configured or without any Function Execution counts, Its the candidate for Decommissioning.
+
+Use this powershell script to get the Function execution metrics. 
+
+```
+Powershell: Get-AzMetric -ResourceId "test" -MetricName "FunctionExecutionCount" -AggregationType Maximum
+```
 #### Remediations:
 
 *  Aggressive -  Immediate Decommissioning of the AppService Plan ( after taking application backup)
